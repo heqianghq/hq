@@ -10,7 +10,7 @@ gulp.task('Server',['less'],function(){
 	bs.init({
 		server:{
 			baseDir:"./",
-			index:"index.html"
+			index:"homepage.html"
 		}
 	});
 	gulp.watch("scr/less/*.less",['less']);

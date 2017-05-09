@@ -34,7 +34,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  background-color: #000000;
+  background-color: #2c1c40;
   margin-top: 25px;
   display: none;
   position: absolute;
@@ -59,107 +59,4 @@ a:visited {
 }
 .clear {
   clear: both;
-}
-.banner {
-  width: 100%;
-  position: relative;
-}
-.banner > img {
-  width: 100%;
-  display: block;
-}
-.banner .banner-bottom {
-  width: 220px;
-  margin: 0 auto;
-  position: absolute;
-  left: 50%;
-  margin-left: -110px;
-  bottom: 30px;
-}
-.banner .banner-bottom .banner-bottom-left {
-  float: left;
-}
-.banner .banner-bottom .banner-bottom-right {
-  float: right;
-}
-.banner .banner-bottom .banner-bottom-center {
-  border-radius: 10px ;
-  height: 15px;
-  width: 48px;
-  border: 1px solid #e7e5ce;
-  float: left;
-  margin-left: 55px;
-  margin-top: 6px;
-}
-.banner .banner-bottom .banner-bottom-center .banner-bottom-center-circular > span {
-  display: block;
-  height: 10px;
-  width: 10px;
-  border-radius: 100%;
-  border: 1px solid navajowhite;
-  float: left;
-  margin-left: 3px;
-  margin-top: 2px;
-  background-color: blue;
-}
-.main {
-  width: 100%;
-  background-color: #f1f2f6;
-}
-.main .main-head {
-  margin: 0 auto;
-  width: 58px;
-  height: 58px;
-  padding-top: 50px;
-}
-.main .main-title {
-  margin: 0 auto;
-  width: 120px;
-  text-align: center;
-  padding-top: 40px;
-}
-.main .main-title > h3 {
-  list-style: none;
-  color: #2f1948;
-  font-size: 24px;
-  padding: 0;
-  margin: 0;
-  letter-spacing: 4px;
-}
-.main .main-title > p {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  color: #2f1948;
-  font-size: 14px;
-}
-.main .main-title > div {
-  width: 50px;
-  margin: 0 auto;
-  padding-top: 10px;
-}
-.main .main-title > div > span {
-  display: block;
-  height: 10px;
-  width: 10px;
-  border-radius: 100%;
-  background-color: #8db5d9;
-  float: left;
-  margin-left: 5px;
-}
-.main .main-text {
-  padding-top: 50px;
-}
-.main .main-text .main-text-left {
-  width: 370px;
-  float: left;
-  padding: 0 30px;
-}
-.main .main-text .main-bottom-right {
-  float: left;
-}
-.main .main-text .main-bottom-right .main-bottom-right-head > span {
-  color: #614d66;
-  font-size: 18px;
-  padding-bottom: 20px;
 }

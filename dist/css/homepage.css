@@ -408,35 +408,50 @@ template {
   color: white;
   font-size: 16px;
   line-height: 25px;
-  padding: 47px 10px;
+  padding: 47px 10px 30px 10px;
   position: relative;
-}
-.header .header-nav .header-nav-li:hover .header-nav-li-drop-down {
-  display: block;
+  height: 25px;
 }
 .header .header-nav .header-nav-li > a {
+  display: inline-block;
+  line-height: 25px;
+}
+.header .header-nav .header-nav-li > a > span {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
   float: left;
 }
-.header .header-nav .header-nav-li > img {
+.header .header-nav .header-nav-li > a > h3 {
+  list-style: none;
+  margin: 0;
   float: left;
-  padding-top: 0px ;
+  font-size: 16px;
 }
 .header .header-nav .header-nav-li .header-nav-li-drop-down {
   list-style: none;
   padding: 0;
   margin: 0;
   background-color: #2c1c40;
-  margin-top: 25px;
   display: none;
   position: absolute;
   top: 50px;
   left: 10px;
   z-index: 1;
+  padding: 10px 10px 10px 10px;
+  top: 90px;
 }
 .header .header-nav .header-nav-li .header-nav-li-drop-down > li {
   height: 25px;
   width: 89px;
   text-align: center;
+}
+.header .header-nav .header-nav-li .header-nav-li-drop-down > li:hover {
+  background-color: deepskyblue;
+}
+.header .header-nav .header-nav-li .header-nav-li-drop-down > li > a:hover:after {
+  content: url(../../dist/img/images/nav_li_bg.png);
+  float: right;
 }
 .public {
   width: 1080px;
@@ -597,7 +612,7 @@ a:visited {
 .main .main-text .main-bottom-right .main-bottom-right-bottom p {
   font-size: 14px;
   margin: 0;
-  line-height: 24px;
+  line-height: 22px;
 }
 .main .main-text .main-bottom-right .main-bottom-right-img {
   height: 60px;
@@ -607,10 +622,10 @@ a:visited {
 }
 .main .main-text .main-bottom-right .main-bottom-right-img .Quotes-left {
   float: right;
+  padding-top: 40px;
 }
 .main .main-text .main-bottom-right .main-bottom-right-img .Quotes-right {
   float: right;
-  padding-top: 50px;
 }
 .main .main-text .main-bottom-right .main-bottom-right-img > span {
   float: right;

@@ -39,9 +39,12 @@ $(function(){
 		
 	});
 	$('.header-nav-li').hover(function(){
-		$(this).find('img').attr('src','dist/img/images/nav_downarrow2.png')
+		$(this).find('img').attr('src','dist/img/images/nav_downarrow2.png');
+		$(this).find('.header-nav-li-drop-down').slideDown();
 	},
 	function(){
-		$(this).find('img').attr('src','dist/img/images/nav_downarrow.png')
+		$(this).find('img').attr('src','dist/img/images/nav_downarrow.png');
+		$(this).find('.header-nav-li-drop-down').slideUp();
 	});
+	
 })

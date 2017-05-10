@@ -438,18 +438,21 @@ template {
   top: 50px;
   left: 10px;
   z-index: 1;
-  padding: 10px 10px 10px 10px;
   top: 90px;
 }
 .header .header-nav .header-nav-li .header-nav-li-drop-down > li {
+  padding: 5px 30px 5px 10px;
   height: 25px;
-  width: 89px;
+  width: 70px;
   text-align: center;
 }
 .header .header-nav .header-nav-li .header-nav-li-drop-down > li:hover {
   background-color: deepskyblue;
+  transition: background-color 0.5s;
+  padding-left: 30px;
+  padding-right: 10px;
 }
-.header .header-nav .header-nav-li .header-nav-li-drop-down > li > a:hover:after {
+.header .header-nav .header-nav-li .header-nav-li-drop-down > li:hover:after {
   content: url(../../dist/img/images/nav_li_bg.png);
   float: right;
 }
@@ -470,9 +473,54 @@ a:visited {
   width: 100%;
   position: relative;
 }
-.banner > img {
+.banner .banner-bg {
   width: 100%;
   display: block;
+}
+.banner .banner-animate .banner-bg-a {
+  position: absolute;
+  left: 0px;
+  top: 175px;
+}
+.banner .banner-animate .banner-bg-b {
+  position: absolute;
+  right: 0px;
+  top: 250px;
+}
+.banner .banner-animate .banner-bg-c {
+  position: absolute;
+  left: 620px;
+  top: 300px;
+}
+.banner .banner-animate1 .banner-bg-d {
+  position: absolute;
+  left: 0px;
+  top: 175px;
+}
+.banner .banner-animate1 .banner-bg-e {
+  position: absolute;
+  right: 0px;
+  top: 38px;
+}
+.banner .banner-animate1 .banner-bg-f {
+  position: absolute;
+  left: 340px;
+  top: 190px;
+}
+.banner .banner-animate2 .banner-bg-g {
+  position: absolute;
+  left: 0px;
+  top: 175px;
+}
+.banner .banner-animate2 .banner-bg-h {
+  position: absolute;
+  right: 0px;
+  top: 250px;
+}
+.banner .banner-animate2 .banner-bg-c {
+  position: absolute;
+  left: 620px;
+  top: 300px;
 }
 .banner .banner-bottom {
   width: 220px;

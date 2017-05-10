@@ -46,16 +46,20 @@
                 top: 50px;
                 left:10px;
                 z-index: 1;
-                padding: 10px 10px 10px 10px;
+                
                 top:90px;
                 >li{
+                    padding: 5px 30px 5px 10px;
                     height: 25px;
-                    width: 89px;
+                    width: 70px;
                     text-align: center;
                     &:hover{
                         background-color: deepskyblue;
+                        transition: background-color 0.5s;
+                        padding-left: 30px;
+                        padding-right: 10px;
                     }
-                    >a:hover:after{
+                    &:hover:after{
                         content: url(../../dist/img/images/nav_li_bg.png);
                         float: right;
                     }

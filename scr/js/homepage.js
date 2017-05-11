@@ -110,4 +110,92 @@ $(function(){
 		$(this).find('img').attr('src','dist/img/images/nav_downarrow.png');
 		$(this).find('.header-nav-li-drop-down').slideUp();
 	});
+	
+	//main
+	$('.main-bottom-right-center-left').hover(function(){
+		$(this).attr('src','dist/img/images/prev_Arrow2.png')
+	},
+	function(){
+		$(this).attr('src','dist/img/images/prev_Arrow.png')
+	})
+	$('.main-bottom-right-center-right').hover(function(){
+		$(this).attr('src','dist/img/images/next_Arrow2.png')
+	},
+	function(){
+		$(this).attr('src','dist/img/images/next_Arrow.png')
+	})
+	
+
+	$('.main-nav-span').eq(0).find('span').hide();	
+
+	
+	var index=0
+	$('.main-bottom-right-center-left').click(function(){
+		index--;
+		if(index<0){
+			index=5;
+		}
+		main1()
+	})
+	$('.main-bottom-right-center-right').click(function(){
+		index++;
+		if(index>5){
+			index=0;
+		}
+		main2()
+	})
+	$('.main-nav-span').click(function(){
+		i=$(this).index();
+		if(i<index){
+			index=i;
+			main1();
+		}
+		if(i>index){
+			index=i;
+			main2();
+		}
+	})
+	$('.main-text').hide();
+	$('.main-text').eq(0).show();
+	function main1(){
+		$('.main-nav-span').eq(index).find('span').hide();
+		$('.main-nav-span').eq(index).siblings().find('span').show();
+		$('.main-nav-span').eq(index).siblings().find('i').removeClass('acc');
+		$('.main-nav-span').eq(index).find('i').addClass('acc');
+		$('.main-text').hide();
+		$('.main-text').eq(index).show();
+		$('.main-text').eq(index).css({
+			left:-300
+		})
+		$('.main-text').eq(index).animate({
+			left:0
+		})
+		$('.main-text .main-bottom-right').eq(index).css({
+			left:0
+		})
+		$('.main-text .main-bottom-right').eq(index).animate({
+			left:485
+		},1000)
+	}
+	function main2(){
+		$('.main-nav-span').eq(index).find('span').hide();
+		$('.main-nav-span').eq(index).siblings().find('span').show();
+		$('.main-nav-span').eq(index).siblings().find('i').removeClass('acc');
+		$('.main-nav-span').eq(index).find('i').addClass('acc');
+		$('.main-text').hide();
+		$('.main-text').eq(index).show();
+		$('.main-text').eq(index).css({
+			left:300
+		})
+		$('.main-text').eq(index).animate({
+			left:0
+		})
+		$('.main-text .main-bottom-right').eq(index).css({
+			left:1000
+		})
+		$('.main-text .main-bottom-right').eq(index).animate({
+			left:485
+		},1000)
+		
+	}
 })

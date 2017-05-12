@@ -171,7 +171,7 @@ $(function(){
 			left:0
 		})
 		$('.main-text .main-bottom-right').eq(index).css({
-			left:0
+			left:250
 		})
 		$('.main-text .main-bottom-right').eq(index).animate({
 			left:485
@@ -191,7 +191,7 @@ $(function(){
 			left:0
 		})
 		$('.main-text .main-bottom-right').eq(index).css({
-			left:1000
+			left:750
 		})
 		$('.main-text .main-bottom-right').eq(index).animate({
 			left:485
